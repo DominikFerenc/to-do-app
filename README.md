@@ -39,8 +39,24 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+Option 2: Running the Application with Docker Compose
+Alternatively, you can build and run the application inside a Docker container using Docker Compose.
+
+Build the Docker Image
+
+1. **First, build the Docker image for the frontend application:**
+   ### `docker build -t react-frontend .`
+
+2. **Run the Application**
+
+  Use Docker Compose to start the application:
+  ### `docker-compose up -d`
+
+  This will start the application in detached mode. The application will be accessible at http://localhost:3000.
